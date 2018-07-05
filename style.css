@@ -121,7 +121,9 @@ body {
   padding: 0;
   margin: 12px 0 0 0 ;
   width: 55%;
+  max-height: 200px;
   line-height: 1.5em;
+  overflow: auto;
 }
 
 

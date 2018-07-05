@@ -45,3 +45,9 @@ function closeShare() {
   var closeShare = document.getElementById('shareList');
   closeShare.style="display:none";
 }
+// document.getElementById('size').onclick = checkSize;
+// function checkSize() {
+//   var sizes = document.getElementById('size');
+//   var sizes.style="box-shadow: 0 0 10px rgba(0,0,0,0.5)";
+  
+// }

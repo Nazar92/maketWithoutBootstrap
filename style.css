@@ -66,9 +66,21 @@ body {
 }
 
 .shareIt {
+  margin: 20px 0 0 0;
   color: #2c87ce;
   font-weight: bold;
   text-decoration: none;
+  /* vertical-align: middle; */
+}
+.starList {
+  padding: 0;
+  margin: 10px 20px 0 0;
+  display: inline-block;
+  /* vertical-align: middle; */
+}
+.starItem {
+  display: inline-block;
+  vertical-align: middle;
 }
 .shareList{
   position: absolute;
@@ -116,12 +128,11 @@ body {
 
 
 
-/* size */
+/*//////////////////////// size /////////////////*/
 .size{
   display: inline-block;
   padding: 0;
   font-size: 20px;
-  /* margin: 10px 0; */
 }
 .sizeText{
   display: inline-block;
@@ -166,9 +177,32 @@ body {
   font-size: 13px;
 }
 
-
-
-
+.sizes {
+ width: 40px;
+ height: 40px;
+ padding: 0;
+ margin: 10px;
+ border: 1px solid black;
+ border-radius: 50%;
+ background-color: transparent;
+ outline: none;
+ vertical-align: middle;
+}
+.sizes:focus{
+ box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.blue {
+  background-color: #77d8e7;
+}
+.green {
+  background-color: #96c795;
+}
+.red {
+  background-color: #ce92a1;
+}
+.fiolet {
+  background-color: #aa93cf;
+}
 
 /* color */
 .color{
@@ -181,34 +215,6 @@ body {
   font-size: 20px;
   vertical-align: middle;
 }
-.colorView{
-  display: inline-block;
-  vertical-align: middle;
-  width: 50px;
-  height: 50px;
-  border: 1px solid transparent;
-  border-radius: 50%;
-  text-decoration: none;
-  outline: none;
-}
-input[type=radio] {
-  background-color: red !important;
-  z-index: 1001;
-}
-#blue{
-  /* background-color: #77d8e7; */
-  background-image: url('madia/800x600-03 copy.png');
-}
-#green {
-  background-color: #96c795;
-}
-#red {
-  background-color: #ce92a1;
-}
-#fiolet {
-  background-color: #aa93cf;
-}
-
 
 .rightButton{
   height: 45px;
@@ -228,21 +234,7 @@ input[type=radio] {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* gallary */
+/*//////////////////// gallary /////////////////*/
 .gallerySection{
   margin: 20px auto;
   padding: 0;
@@ -257,13 +249,11 @@ input[type=radio] {
   padding: 0 0 0 40px;
   margin: 20px 0 10px;
   font-size: 19px;
-  /* display: inline-block; */
 }
 .gallerySectionList{
   padding: 0;
   margin: 0 auto;
   list-style: none;
-  /* max-width: 850px; */
   text-align: center;
   width: 100%;
 }
@@ -271,7 +261,6 @@ input[type=radio] {
   padding: 0;
   margin: 0 30px 0 0;
   display: inline-block;
-  /* width: 28%; */
   width: 300px;
   text-align: center;
   font-family: sans-serif;
@@ -285,7 +274,6 @@ input[type=radio] {
 }
 .productPrice{
   display: block;
-  /* width: 100%; */
   position: relative;
   padding: 5px 0;
   margin: -50px 0 0 0;
@@ -294,7 +282,6 @@ input[type=radio] {
   display: inline;
   float: right;
   font-size: 15px;
-  /* position: absolute; */
   right: 0;
 }
 .oldProductPrice{
@@ -311,7 +298,6 @@ input[type=radio] {
 }
 .nameProduct{
   display: inline-block;
-  /* width: 70%; */
 }
 @media screen and (min-device-width: 993px) {
   .tablet {
@@ -321,6 +307,10 @@ input[type=radio] {
     display: none;
   }
 }
+
+
+/*///////////////////////// tablet ////////////////////////////*/
+
 @media screen and (max-device-width: 992px) {
   .desktop{
     display: none;
@@ -362,7 +352,6 @@ input[type=radio] {
     margin: 5px;
   }
   .left .productSectionLeft img {
-    /* width: 100%; */
     position: relative;
     z-index: 4;
   }
@@ -415,7 +404,6 @@ input[type=radio] {
   
 
   .productSectionImg {
-    /* display: inline-block; */
     padding: 0;
     margin: 0 auto;
     display: block;
@@ -436,6 +424,7 @@ input[type=radio] {
     display: block;
   }
 }
+/*///////////////////////// mobile ////////////////////////////*/
 
 @media only screen and (max-device-width: 600px) {
   .desktop {
@@ -493,7 +482,7 @@ input[type=radio] {
   .sizeText {
     display: block;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 20px;
   }
   .youMay {
     text-align: center;
@@ -501,10 +490,6 @@ input[type=radio] {
     margin: 0;
     font-size: 25px;
     font-family: sans-serif;
-  }
-  .sizeList {
-    margin: 0;
-    padding: 0;
   }
   .colorText {
     display: block;
@@ -526,7 +511,6 @@ input[type=radio] {
   .nameProduct {
     display: block;
     padding: 35px 0;
-    /* margin: 0; */
     text-align: center;
     font-size: 14px;
     font-weight: bold;
@@ -544,34 +528,8 @@ input[type=radio] {
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
   }
 }
-  
  
-  
-.round {
-  padding: 0;
-  margin: 10px;
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: red;
-}
-.round:active {
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
-}
-.round:checked {
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
-}
-input:focus {
-  background-color: red;
-}
-.chekk:checked{
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  color: red;
 
-}
 
 
 
